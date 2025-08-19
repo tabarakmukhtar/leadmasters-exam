@@ -60,9 +60,6 @@ A full-stack, production-ready online exam-taking application for students, buil
 - Use the provided `postman_collection.json` for backend API testing.
 
 ## Screenshots
-You can add screenshots to showcase the UI. Place your images in a folder (e.g., `frontend/screenshots/`) and use the following markdown:
-
-```markdown
 ## Screenshots
 
 ### Login Page
@@ -73,9 +70,8 @@ You can add screenshots to showcase the UI. Place your images in a folder (e.g.,
 
 ### Result Page
 ![Result Page](frontend/screenshots/result.png)
-```
 
-Replace the image paths and descriptions as needed. Commit the images along with your code so they appear on GitHub or your code host.
+> If images are not visible, make sure you have committed the screenshots to the correct folder and pushed them to GitHub.
 
 ---
 
