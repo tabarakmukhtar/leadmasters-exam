@@ -1,0 +1,136 @@
+/* Modern, professional, and attractive UI for the exam app */
+body {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(120deg, #f0f4f8 0%, #e9eafc 100%);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: 48px auto;
+  background: #fff;
+  padding: 2.5em 2em 2em 2em;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px #0002, 0 1.5px 4px #0001;
+  transition: box-shadow 0.2s;
+}
+
+.container:hover {
+  box-shadow: 0 10px 40px #0003, 0 2px 8px #0001;
+}
+
+h2 {
+  text-align: center;
+  color: #3a3a6a;
+  margin-bottom: 1.2em;
+  letter-spacing: 0.5px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 10px 0 18px 0;
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f7f8fa;
+  transition: border 0.2s;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border: 1.5px solid #6c63ff;
+  outline: none;
+}
+
+button {
+  margin: 10px 6px 0 0;
+  padding: 10px 22px;
+  background: linear-gradient(90deg, #6c63ff 60%, #48c6ef 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #6c63ff22;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:disabled {
+  background: #bfc2e2;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
+  box-shadow: 0 4px 16px #6c63ff33;
+}
+
+nav {
+  background: #fff;
+  padding: 1.1em 0.5em;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px #0001;
+  margin-bottom: 32px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: 500;
+  font-size: 1.08em;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #48c6ef;
+}
+
+nav button {
+  background: #ff5e62;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1em;
+  font-weight: 500;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+nav button:hover {
+  background: #ff9966;
+}
+
+label {
+  display: block;
+  margin: 10px 0 0 0;
+  font-size: 1.04em;
+  color: #3a3a6a;
+  cursor: pointer;
+}
+
+input[type=radio] {
+  margin-right: 8px;
+  accent-color: #6c63ff;
+}
+
+p {
+  margin: 0.7em 0;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 1.2em 0.5em;
+  }
+  nav {
+    padding: 0.7em 0.2em;
+  }
+}

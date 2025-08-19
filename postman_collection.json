@@ -1,0 +1,57 @@
+{
+  "info": {
+    "name": "Leadmasters Exam API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\n  \"username\": \"student1\",\n  \"password\": \"testpass\"\n}"},
+        "url": {"raw": "http://localhost:8000/auth/register", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["auth", "register"]}
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/x-www-form-urlencoded"}],
+        "body": {"mode": "urlencoded", "urlencoded": [
+          {"key": "username", "value": "student1"},
+          {"key": "password", "value": "testpass"}
+        ]},
+        "url": {"raw": "http://localhost:8000/auth/login", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["auth", "login"]}
+      }
+    },
+    {
+      "name": "Start Exam",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+        "url": {"raw": "http://localhost:8000/exam/start", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["exam", "start"]}
+      }
+    },
+    {
+      "name": "Submit Exam",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Authorization", "value": "Bearer {{token}}"},
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {"mode": "raw", "raw": "{\n  \"answers\": [{\n    \"question_id\": 1,\n    \"selected_option\": \"A\"\n  }],\n  \"start_time\": \"2025-08-19T12:00:00.000Z\"\n}"},
+        "url": {"raw": "http://localhost:8000/exam/submit", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["exam", "submit"]}
+      }
+    },
+    {
+      "name": "Get Result",
+      "request": {
+        "method": "GET",
+        "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+        "url": {"raw": "http://localhost:8000/exam/result/1", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["exam", "result", "1"]}
+      }
+    }
+  ]
+}
