@@ -60,7 +60,6 @@ A full-stack, production-ready online exam-taking application for students, buil
 - Use the provided `postman_collection.json` for backend API testing.
 
 ## Screenshots
-## Screenshots
 
 ### Login Page
 ![Login Page](frontend/screenshots/login.png)
