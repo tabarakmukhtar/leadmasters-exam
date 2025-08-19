@@ -75,5 +75,5 @@ A full-stack, production-ready online exam-taking application for students, buil
 
 ---
 
-**Author:** LeadMasters Team
+**Author:** Tabarak Mukhtar
 **License:** MIT
